@@ -7,10 +7,9 @@ class ProfilSerializer(serializers.ModelSerializer):
     pfoto = serializers.ImageField(read_only=True)
     class Meta:
         model = Profil
-        fiedls = "__all__"
+        fields = "__all__"
 
 class ProfilFotoSerializer(serializers.ModelSerializer):
-
     class Meta:
         model = Profil
         fields = ["pfoto"]
